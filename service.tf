@@ -1,7 +1,7 @@
 resource "kubernetes_service" "svc" {
   metadata {
     name      = "svc"
-    namespace = "smith"
+    namespace = "smith1"
     labels {
       app = "nginx"
     }

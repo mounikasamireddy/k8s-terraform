@@ -1,7 +1,7 @@
 resource "kubernetes_deployment" "mongo_deployment" {
   metadata {
     name = "mongo-deployment"
-    namespace = "smith"
+    namespace = "smith1"
     labels {
       app = "mongo"
     }

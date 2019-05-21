@@ -1,7 +1,7 @@
 resource "kubernetes_deployment" "nginx" {
   metadata {
     name = "nginx"
-    namespace = "smith"
+    namespace = "smith1"
 
     labels {
       app = "nginx"
@@ -27,10 +27,10 @@ resource "kubernetes_deployment" "nginx" {
       spec {
         container {
           name  = "nginx"
-          image = "nginx:1.7.8"
+          image = "mounikavenna1281991/nginx"
 
           port {
-            container_port = 8080
+            container_port = 80
           }
         }
 

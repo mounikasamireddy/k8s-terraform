@@ -1,7 +1,7 @@
 resource "kubernetes_deployment" "nodejs" {
   metadata {
     name = "nodejs"
-    namespace = "smith"
+    namespace = "smith1"
 
     labels {
       app = "nodejs"
@@ -27,10 +27,10 @@ resource "kubernetes_deployment" "nodejs" {
       spec {
         container {
           name  = "nodejs"
-          image = "bonomat/nodejs-hello-world"
+          image = "mounikavenna1281991/nodejs"
 
           port {
-            container_port = 8081
+            container_port = 3001
           }
         }
 

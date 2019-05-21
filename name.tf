@@ -1,5 +1,5 @@
 resource "kubernetes_namespace" "default" {
   metadata {
-    name = "smith"
+    name = "smith1"
     }
   }
